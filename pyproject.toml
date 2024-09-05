@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wagtail-impersonate"
+version = "0.1.0"
+description = "Wagtail integration for django-impersonate"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Stepan Pliaskin", email = "stepan@plyask.in" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Wagtail",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["wagtail", "django", "impersonate"]
+requires-python = ">=3.1"
+
+dependencies = [
+    'django-impersonate >= 1.9.4',
+    'wagtail >= 6.1',
+]
+
+[project.urls]
+homepage = "https://github.com/ToJIka4/wagtail-impersonate"
+repository = "https://github.com/ToJIka4/wagtail-impersonate"
+
+[tool.setuptools.packages.find]
+where = ["."]
